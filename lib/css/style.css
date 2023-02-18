@@ -1,7 +1,203 @@
-*{margin: 0; padding: 0; box-sizing: border-box;}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-.calendarUser, .calendarManager {
+.calendarUser,
+.calendarManager {
     width: 80%;
     margin: 30px auto;
     height: 80vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    background-color: #ff9100;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 32px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+/* Container */
+.container {
+    background-image: url("vista-da-rua-de-frankfurt-no-centro-da-alemanha.jpg");
+    background-size: cover;
+    min-height: 853px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* Container */
+    .container {
+        min-height: 400px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Header */
+    header {
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    /* Buttons */
+    .button {
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 72px);
+}
+
+.button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    background-color: #ff9100;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.button:hover {
+    background-color: #003d4d;
+}
+
+.back-button {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 10px;
+    background-color: #ff9100;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.back-button:hover {
+    background-color: #003d4d;
+}
+
+form label {
+    margin-top: 20px;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    margin-left: 30%;
+}
+
+form input,
+form select {
+    margin-left: 30%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 16px;
+    width: 30%;
+}
+
+form select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-position: right 10px top 50%;
+}
+
+.button-submit {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    background-color: #ff9100;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-left: 30%;
+}
+
+/* Style for the delete button */
+#delete {
+    display: inline-block;
+    margin-top: -10%;
+    padding: 15px;
+    background-color: #ff4136;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-left: 62%;
+}
+
+#delete:hover {
+    background-color: #d30c00;
+}
+
+#delete img {
+    vertical-align: middle;
+    margin-right: 0px;
+}
+
+/* Style for the form inputs and labels */
+form label {
+    display: block;
+    margin: 10px 0;
+    font-size: 18px;
+    margin-left: 30%;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="time"] {
+    display: block;
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style for the submit button */
+.buttonsubmit {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #2ecc40;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-submit:hover {
+    background-color: #24a33d;
 }

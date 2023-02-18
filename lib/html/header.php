@@ -9,3 +9,4 @@
     <link rel="stylesheet"  href="<?php echo DIRPAGE. 'lib/js/FullCalendar/main.min.css'; ?>">
 </head>
 <body>
+
