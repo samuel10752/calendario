@@ -36,7 +36,7 @@ $date=new \DateTime($_GET['date'],new \DateTimeZone('America/Sao_Paulo'));
     </select>
     <br>
 
-    <input class="button-submit" type="submit" value="Marcar Consulta">
+    <input class="button-submit" type="submit" value="Marcar Consulta" >
 </form>
 
 <?php include(DIRREQ."lib/html/footer.php"); ?>

@@ -16,3 +16,8 @@ $objEvents->createEvent(
     $start->format("Y-m-d H:i:s"),
     $start->modify('+'.$horasAtendimento.'hours')->format("Y-m-d H:i:s")
 );
+
+// redireciona o usuário para a página inicial
+header("Location: http://localhost/calendario/lib/html/sucesso.user.php"); // substitua a barra com a URL da sua página inicial
+exit();
+    

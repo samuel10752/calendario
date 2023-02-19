@@ -14,3 +14,7 @@ $objEvents->updateEvent(
     $description,
     $start->format("Y-m-d H:i:s")
 );
+
+// redireciona o usuário para a página inicial
+header("Location: http://localhost/calendario/lib/html/sucesso.manager.php"); // substitua a barra com a URL da sua página inicial
+exit();
