@@ -9,8 +9,9 @@
         <div class="buttons">
             <button class="button" onclick="location.href='<?php echo DIRPAGE.'views/user'; ?>'">Calendário do Usuário</button>
             <button class="button" onclick="location.href='<?php echo DIRPAGE.'views/manager'; ?>'">Calendário do Gerente</button>
+            <button class="button" onclick="location.href='<?php echo DIRPAGE.'views/selectable'; ?>'">Calendário Varias datas</button>
         </div>
     </div>
 
-<?php include(DIRREQ."lib/html/footer.php"); ?>
+<?php include(DIRREQ."lib/html/foote.php"); ?>
 
