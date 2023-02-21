@@ -10,6 +10,7 @@
             <button class="button" onclick="location.href='<?php echo DIRPAGE.'views/user'; ?>'">Calendário do Usuário</button>
             <button class="button" onclick="location.href='<?php echo DIRPAGE.'views/manager'; ?>'">Calendário do Gerente</button>
             <button class="button" onclick="location.href='<?php echo DIRPAGE.'views/selectable'; ?>'">Calendário Varias datas</button>
+            <button class="button" onclick="location.href='<?php echo DIRPAGE.'views/dropandresize'; ?>'">Arrastando e Redimensionando Eventos</button>
         </div>
     </div>
 
